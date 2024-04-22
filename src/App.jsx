@@ -1,23 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 
+import AppName from './components/AppName'
+import AddTodo from './components/AddTodo'
 
 function App() {
 
 
   return (
     <>
+    
    <div class="container text-center">
-  <div class="row">
+    <AppName />
+  <AddTodo/>
+
+   <div class="row">
     <div class="col-6">
-      <input type="text" placeholder='Enter Your Todo' /> 
+      Buy burger
     </div>
     <div class="col-4">
-      <input type="date" name="" id="" />
+      12/10/2024
     </div>
-    <div class="col-2"><input type="submit" value="Add" /></div>
+    <div class="col-2"><button type="button" class="btn btn-danger">Delete</button></div>
   </div>
+
+
+   <div class="row">
+    <div class="col-6">
+      Buy burger
+    </div>
+    <div class="col-4">
+      12/10/2024
+    </div>
+    <div class="col-2"><button type="button" class="btn btn-danger">Delete</button></div>
+  </div>
+
+  
   
 </div>
     </>
